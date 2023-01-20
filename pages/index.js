@@ -6,8 +6,13 @@ import { getClient, usePreviewSubscription } from "@lib/sanity";
 import defaultOG from "../public/img/opengraph.jpg";
 import { postquery, configQuery } from "@lib/groq";
 import GetImage from "@utils/getImage";
-import { FaBeer } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
+import {
+  CiFacebook,
+  CiInstagram,
+  SlSocialSpotify
+} from "react-icons/ci";
 
 export default function Post(props) {
   const { postdata, siteconfig, preview } = props;
@@ -55,17 +60,27 @@ export default function Post(props) {
             }}
           />
 
-            <div className="container-links">
-              <a href="https://open.spotify.com/album/3PscE3ekG6V0lBDcmxIZ0M" target="_blank">
-                
-                <button class="linkto-btn">
-                  ✨ My lastest release ✨
-                </button>
-              </a>
+          <div className="container-links">
+            <a
+              href="https://open.spotify.com/album/3PscE3ekG6V0lBDcmxIZ0M"
+              target="_blank">
               <button class="linkto-btn">
-              📖 Blog 📖 (Coming Soon)
-                </button>
+                ✨ My lastest release ✨
+              </button>
+            </a>
+            <button class="linkto-btn">
+              📖 Blog (Coming Soon) 📖
+            </button>
+            <div class="social-row">
+              <IconContext.Provider
+                value={{ className: "shared-class", size: 30 }}>
+                <>
+                  <CiFacebook />
+                  <CiInstagram />
+                </>
+              </IconContext.Provider>
             </div>
+          </div>
         </Layout>
       )}
     </>

@@ -13,6 +13,10 @@
     width: 410px;
 }
 
+.social-row{
+    display: flex;
+}
+
 
 .linkto-btn {
     width: 330px;
@@ -32,3 +36,4 @@
     background-position: 0 0;
 
 }
+
