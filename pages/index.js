@@ -8,11 +8,9 @@ import { postquery, configQuery } from "@lib/groq";
 import GetImage from "@utils/getImage";
 import { IconContext } from "react-icons";
 
-import {
-  CiFacebook,
-  CiInstagram,
-  SlSocialSpotify
-} from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiYoutube } from "react-icons/ci";
+import { SiBandcamp } from "react-icons/si";
+import { SlSocialSpotify } from "react-icons/sl";
 
 export default function Post(props) {
   const { postdata, siteconfig, preview } = props;
@@ -68,6 +66,11 @@ export default function Post(props) {
                 ✨ My lastest release ✨
               </button>
             </a>
+            <a href="mailto:music@hstrejoluna.com" target="_blank">
+              <button class="linkto-btn">
+                ✉️ music@hstrejoluna.com ✉️
+              </button>
+            </a>
             <button class="linkto-btn">
               📖 Blog (Coming Soon) 📖
             </button>
@@ -75,8 +78,31 @@ export default function Post(props) {
               <IconContext.Provider
                 value={{ className: "shared-class", size: 30 }}>
                 <>
-                  <CiFacebook />
-                  <CiInstagram />
+                  <a
+                    href="https://www.facebook.com/hstrejolunamusic"
+                    target="_blank">
+                    <CiFacebook />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/hstrejoluna/"
+                    target="_blank">
+                    <CiInstagram />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCegsYcscW0nitdH6PQmCq8A/featured"
+                    target="_blank">
+                    <CiYoutube />
+                  </a>
+                  <a
+                    href="https://open.spotify.com/artist/3WzEP30CahGifnG1uSVZnu"
+                    target="_blank">
+                    <SlSocialSpotify />
+                  </a>
+                  <a
+                    href="https://hstrejoluna.bandcamp.com/"
+                    target="_blank">
+                    <SiBandcamp />
+                  </a>
                 </>
               </IconContext.Provider>
             </div>
