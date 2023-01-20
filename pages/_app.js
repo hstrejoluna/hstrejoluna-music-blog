@@ -1,11 +1,17 @@
 import { ThemeProvider } from "next-themes";
+import Head from "next/head";
 import "../css/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <Head>
+        <title>My new cool app</title>
+      </Head>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   );
 }
 

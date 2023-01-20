@@ -11,7 +11,7 @@ export default function Navbar(props) {
     {
       label: "Home",
       href: "/"
-    },
+    }
     // {
     //   label: "About",
     //   href: "/about"
@@ -60,37 +60,13 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <Link href="/">
-                    <a className="w-28 dark:hidden">
-                      {props.logo ? (
-                        <Image
-                          {...GetImage(props.logo)}
-                          alt="Logo"
-                          sizes="(max-width: 640px) 100vw, 200px"
-                          priority={true}
-                        />
-                      ) : (
-                        <span className="block text-center">
-                          HS Trejo Luna Music
-                        </span>
-                      )}
+                    <a className="w-28">
+                      <span className="block text-center">
+                        HS Trejo Luna Music
+                      </span>
                     </a>
                   </Link>
-                  <Link href="/">
-                    <a className="hidden w-28 dark:block">
-                      {props.logoalt ? (
-                        <Image
-                          {...GetImage(props.logoalt)}
-                          alt="Logo"
-                          sizes="(max-width: 640px) 100vw, 200px"
-                          priority={true}
-                        />
-                      ) : (
-                        <span className="block text-center">
-                          Stablo
-                        </span>
-                      )}
-                    </a>
-                  </Link>
+           
                   <Disclosure.Button
                     aria-label="Toggle Menu"
                     className="px-2 py-1 ml-auto text-gray-500 rounded-md md:hidden focus:text-blue-500 focus:outline-none dark:text-gray-300 ">

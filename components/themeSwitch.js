@@ -1,5 +1,6 @@
 // import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { useEffect } from "react";
 import { SunIcon } from "@heroicons/react/outline";
 
 const ThemeSwitch = () => {
@@ -7,13 +8,9 @@ const ThemeSwitch = () => {
   //   const { resolvedTheme, setTheme } = useTheme();
   const { theme, setTheme } = useTheme();
   // useEffect only runs on the client, so now we can safely show the UI
-  //   useEffect(() => {
-  //     setMounted(true);
-  //   }, []);
-
-  //   if (!mounted) {
-  //     return null;
-  //   }
+    useEffect(() => {
+      setTheme("dark");
+    }, []);
 
   return (
     <div className="inline-flex items-center">

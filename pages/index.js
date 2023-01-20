@@ -53,10 +53,9 @@ export default function Post(props) {
             }}
           />
           <Container>
-            <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
-              <h2>Hello</h2>
+            <div className="container">
+              <button class="linkto-btn">My lastest release</button>
             </div>
-  
           </Container>
         </Layout>
       )}

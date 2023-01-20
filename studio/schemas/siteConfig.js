@@ -32,7 +32,7 @@ export default {
     {
       name: "title",
       type: "string",
-      title: "Site title"
+      title: "HS Trejo Luna Music"
     },
     {
       title: "URL",
@@ -43,7 +43,7 @@ export default {
     {
       name: "copyright",
       type: "string",
-      title: "Copyright Name",
+      title: "HS Trejo Luna",
       description: "Enter company name to appear in footer after ©"
     },
 
