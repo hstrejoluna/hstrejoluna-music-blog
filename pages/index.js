@@ -6,6 +6,8 @@ import { getClient, usePreviewSubscription } from "@lib/sanity";
 import defaultOG from "../public/img/opengraph.jpg";
 import { postquery, configQuery } from "@lib/groq";
 import GetImage from "@utils/getImage";
+import { FaBeer } from 'react-icons/fa';
+
 
 export default function Post(props) {
   const { postdata, siteconfig, preview } = props;
@@ -52,11 +54,18 @@ export default function Post(props) {
               cardType: "summary_large_image"
             }}
           />
-          <Container>
-            <div className="container">
-              <button class="linkto-btn">My lastest release</button>
+
+            <div className="container-links">
+              <a href="https://open.spotify.com/album/3PscE3ekG6V0lBDcmxIZ0M" target="_blank">
+                
+                <button class="linkto-btn">
+                  ✨ My lastest release ✨
+                </button>
+              </a>
+              <button class="linkto-btn">
+              📖 Blog 📖 (Coming Soon)
+                </button>
             </div>
-          </Container>
         </Layout>
       )}
     </>
