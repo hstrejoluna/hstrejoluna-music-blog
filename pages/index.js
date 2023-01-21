@@ -61,46 +61,46 @@ export default function Post(props) {
           <div className="container-links">
             <a
               href="https://open.spotify.com/album/3PscE3ekG6V0lBDcmxIZ0M"
-              target="_blank">
-              <button class="linkto-btn">
+              target="_blank" rel="noreferrer">
+              <button className="linkto-btn">
                 ✨ My lastest release ✨
               </button>
             </a>
-            <a href="mailto:music@hstrejoluna.com" target="_blank">
-              <button class="linkto-btn">
+            <a href="mailto:music@hstrejoluna.com" target="_blank" rel="noreferrer">
+              <button className="linkto-btn">
                 ✉️ music@hstrejoluna.com ✉️
               </button>
             </a>
-            <button class="linkto-btn">
+            <button className="linkto-btn">
               📖 Blog (Coming Soon) 📖
             </button>
-            <div class="social-row">
+            <div className="social-row">
               <IconContext.Provider
                 value={{ className: "shared-class", size: 30 }}>
                 <>
                   <a
                     href="https://www.facebook.com/hstrejolunamusic"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     <CiFacebook />
                   </a>
                   <a
                     href="https://www.instagram.com/hstrejoluna/"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     <CiInstagram />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCegsYcscW0nitdH6PQmCq8A/featured"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     <CiYoutube />
                   </a>
                   <a
                     href="https://open.spotify.com/artist/3WzEP30CahGifnG1uSVZnu"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     <SlSocialSpotify />
                   </a>
                   <a
                     href="https://hstrejoluna.bandcamp.com/"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     <SiBandcamp />
                   </a>
                 </>
