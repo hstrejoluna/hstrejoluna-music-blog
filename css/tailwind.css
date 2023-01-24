@@ -2,41 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /*Custom Styles Here*/
-
-.container-links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    justify-self: space-around;
-    width: auto;
+.profilepic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 45px;
 }
 
-.social-row{
-    display: flex;
-    margin-block-start: 20px;
-    gap: 30px
+.textcontain {
+  margin-block-start: 15px;
+  text-align: center;
 }
 
+.picbase {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 5px solid white;
+}
+
+
+
+.container-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  justify-self: space-around;
+  width: auto;
+}
+
+.social-row {
+  display: flex;
+  margin-block-start: 20px;
+  gap: 30px;
+}
 
 .linkto-btn {
-    width: 85vw;
-    height: 50px;
-    padding: 0.6em 1.2em;
-    border-radius: 0.375em;
-    cursor: pointer;
-    color: white;
-    background: linear-gradient(120deg, darkmagenta, crimson, orange);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all .5s;
+  width: 85vw;
+  height: 50px;
+  padding: 0.6em 1.2em;
+  border-radius: 0.375em;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(120deg, darkmagenta, crimson, orange);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.5s;
 }
 
 .linkto-btn:hover {
-    transform: scale(1.1);
-    background-position: 0 0;
-
+  transform: scale(1.1);
+  background-position: 0 0;
 }
-
