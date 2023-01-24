@@ -8,9 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     justify-self: space-around;
-    width: 410px;
+    width: auto;
 }
 
 .social-row{
@@ -21,7 +22,7 @@
 
 
 .linkto-btn {
-    width: 330px;
+    width: 85vw;
     height: 50px;
     padding: 0.6em 1.2em;
     border-radius: 0.375em;
@@ -34,7 +35,7 @@
 }
 
 .linkto-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-position: 0 0;
 
 }
