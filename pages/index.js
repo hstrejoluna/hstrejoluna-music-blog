@@ -36,13 +36,13 @@ export default function Post(props) {
       {posts && siteConfig && (
         <Layout {...siteConfig}>
           <NextSeo
-            title={`${siteConfig?.title}`}
-            description={siteConfig?.description || ""}
+            title='HS Trejo Luna Music'
+            description={siteConfig?.description || "Puro GNU/Linuxwave de Cancún"}
             canonical={siteConfig?.url}
             openGraph={{
               url: siteConfig?.url,
-              title: `${siteConfig?.title}`,
-              description: siteConfig?.description || "",
+              title: 'HS Trejo Luna Music',
+              description: siteConfig?.description || "Puro GNU/Linuxwave de Cancún",
               images: [
                 {
                   url: ogimage,
