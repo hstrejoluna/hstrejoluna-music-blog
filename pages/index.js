@@ -64,7 +64,7 @@ export default function Post(props) {
               src="https://cdn.sanity.io/images/300y1y1i/production/7ea7b1e011eb8388b110583777a7e3053088170d-460x460.jpg"
             />
             <article className="textcontain">
-              <p>Hello, I'm</p>
+              <p>Hello, I&apos;m</p>
               <h1>{profile[0].name}</h1>
             </article>
           </section>
