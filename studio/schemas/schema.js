@@ -11,6 +11,9 @@ import post from "./post";
 import author from "./author";
 import siteconfig from "./siteConfig";
 import mainProfile from "./mainProfile";
+import album from "./album";
+import song from "./song";
+import musicLink from './musicLink';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,6 +24,9 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    musicLink,
+    song,
+    album,
     post,
     author,
     category,
